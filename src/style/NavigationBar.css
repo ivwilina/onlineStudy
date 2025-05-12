@@ -1,0 +1,99 @@
+/* Extra small devices (phones, 600px and down) */
+a {
+  text-decoration: none;
+  color: var(--default-text-color);
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.navBarContainer {
+  background-color: var(--default-element-color);
+  padding: 0.5rem 1.5rem;
+  position: relative;
+  z-index: 99;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand .brandName {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--grey-text-color);
+}
+
+.link:hover {
+  color: var(--default-text-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .navBarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hamburgerMenu {
+    max-width: 2rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 0.5rem;
+  }
+
+  .hamburgerMenu > img {
+    width: 100%;
+  }
+
+  .linksWrapper {
+    position: fixed;
+    display: none;
+    width: 100%;
+    padding: 3rem 0 1rem 0.5rem;
+    background-color: var(--default-element-color);
+    z-index: -1;
+  }
+  .links {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .showMenu {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .hamburgerMenu {
+    display: none;
+  }
+
+  .navBarContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 2rem;
+  }
+}

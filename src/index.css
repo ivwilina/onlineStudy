@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,22 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+:root {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f1f4f9;
+
+  --background-color: #f1f4f9;
+  --default-element-color: #ffffff;
+  --default-text-color: #000000;
+  --grey-text-color: #728093;
+}
+body {
+  margin: 0
+}
+* {
+  box-sizing: border-box;
 }
