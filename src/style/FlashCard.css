@@ -1,0 +1,27 @@
+.flashCardBannerWrapper {
+  width: 100%;
+  background-image: linear-gradient(to right, #f6ebe7, #b5e2f7);
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flashCardBanner {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flashCardBanner img {
+  width: 4rem;
+}
+
+.flashCardBanner p {
+  font-size: 2rem;
+  font-weight: bold
+}

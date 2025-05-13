@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import FlashCardIcon from "../assets/icons/library-svgrepo-com.svg";
+import '../style/FlashCard.css';
 
 const FlashCard = () => {
   return (
-    <div>FlashCard</div>
-  )
-}
+    <>
+    <div className="flashCardBannerWrapper">
+      <div className="flashCardBanner">
+        <div>
+          <img src={FlashCardIcon} />
+        </div>
+        <p>Flash Card</p>
+      </div>
+    </div>
+    </>
+  );
+};
 
-export default FlashCard
+export default FlashCard;
