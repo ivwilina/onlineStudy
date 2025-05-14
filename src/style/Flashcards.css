@@ -1,0 +1,91 @@
+.flashcardsBannerWrapper {
+  width: 100%;
+  background-image: linear-gradient(to right, #f6ebe7, #b5e2f7);
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flashcardsBanner {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flashcardsBanner img {
+  width: 4rem;
+}
+
+.flashcardsBanner p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.flashcardsContentWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flashcardsContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.flashcardsContentContainer .flashcardsStatistic .statisticsTable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--default-element-color);
+  padding: 1rem 0;
+  border-radius: 1rem;
+  border: 1px solid var(--default-text-color)
+}
+
+.flashcardsContentContainer .flashcardsStatistic .statisticsTable > li {
+  list-style: none;
+  font-size: 30;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flashcardsStatistic {
+  padding: 0 2rem;
+}
+
+.pendingWordListContainer {
+  padding: 0 2rem;
+}
+
+.pendingWordListContainer .pendingWordList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .flashcardsContentContainer {
+    width: 100%;
+  }
+  .pendingWordListContainer {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .flashcardsContentContainer {
+    width: 70%;
+  }
+  .pendingWordListContainer {
+    width: 70%;
+  }
+}

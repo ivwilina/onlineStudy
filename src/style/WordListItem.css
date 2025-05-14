@@ -1,0 +1,51 @@
+.wordListItemContainer {
+  width: 12rem;
+  height: 15rem;
+  padding: 1rem ;
+  border-radius: 1rem;
+  margin: 0 0 0.5rem 0.5rem;
+  border: 1px solid var(--default-text-color);
+  background-color: var(--default-element-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
+  min-width: 12rem;
+}
+
+.wordListItemContainer .itemName {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.wordListItemContainer .itemInfo {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2rem;
+}
+.wordListItemContainer .itemInfo > img {
+  width: 1rem;
+}
+
+.wordListItemContainer .authorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.wordListItemContainer .userLearningInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.wordListItemContainer .userLearningInfo > li {
+  list-style: none;
+}
+
+.wordListItemContainer .userLearningInfo > li:nth-child(1) {
+  color: red;
+}

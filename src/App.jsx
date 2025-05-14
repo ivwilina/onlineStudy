@@ -1,7 +1,7 @@
 import './App.css'
 import Home from "./pages/Home";
 import Personal from "./pages/Personal";
-import FlashCard from "./pages/FlashCard";
+import FlashCard from "./pages/flashcard/Flashcards";
 import NavigationBar from './components/NavigationBar';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 

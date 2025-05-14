@@ -7,10 +7,11 @@ import { NavLink as Link } from "react-router-dom";
 
 const NavigationBar = () => {
 
+
   const pageLinks = [
-    {id: 1, link: '/', name: 'Home'},
-    {id: 2, link: '/flashcard', name: 'Flash Card'},
-    {id: 3, link: '/personal', name: 'Personal'},
+    {id: 1, link: '/', name: 'Trang chủ'},
+    {id: 2, link: '/flashcard', name: 'Flashcards'},
+    {id: 3, link: '/personal', name: 'Trang cá nhân'},
   ];
 
   const [showMenu, setShowMenu] = useState(false);
@@ -22,15 +23,21 @@ const NavigationBar = () => {
   return (
     <>
       <div className="navBarContainer">
+
+        {/*logo + tên*/}
         <Link to="/" className="brand">
           <div className="logo">
             <img src={WebLogo} alt="Rapid TOEIC"/>
           </div>
           <p className="brandName">Rapid TOEIC</p>
         </Link>
+
+        {/*hamburger menu cho responsive*/}
         <div className="hamburgerMenu" onClick={handleHamburgerMenu} >
           <img src={HamburgerMenu} alt="Menu" />
         </div>
+
+        {/*links đến các subpages*/}
         <div className={'linksWrapper' + ' ' + classNames({showMenu:showMenu})}>
           <div className="links">
             {pageLinks.map((pageLink) => 

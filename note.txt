@@ -8,6 +8,9 @@ Rapid TOEIC
   - Thống kê số lượng từ đã học
   - List từ đã nhớ
 
+**important:
+  thông tin về list từ lưu theo dạng sql
+  từ trong list lưu nosql
 
   {
     "id" : "usr1_1",

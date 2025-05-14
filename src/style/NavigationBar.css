@@ -11,7 +11,7 @@ p {
 
 .navBarContainer {
   background-color: var(--default-element-color);
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   position: relative;
   z-index: 99;
 }
@@ -24,8 +24,12 @@ p {
 }
 
 .brand .brandName {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
+}
+
+.brand .logo > img {
+  width: 2.5rem;
 }
 
 .link {
@@ -49,8 +53,7 @@ p {
     max-width: 2rem;
     position: absolute;
     right: 1.5rem;
-    top: 0.5rem;
-  }
+    top: rem;  }
 
   .hamburgerMenu > img {
     width: 100%;
