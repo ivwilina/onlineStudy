@@ -4,7 +4,7 @@ import FlashcardItemIcon from "../assets/icons/library-svgrepo-com.svg";
 import StudenIcon from "../assets/icons/student-cap-svgrepo-com.svg";
 
 const WordListItem = (props) => {
-  const wordListName = props.wordListItem.wordListName;
+  const wordListTopic = props.wordListItem.wordListTopic;
   const totalWords = props.wordListItem.totalWords;
   const numOfParticipants = props.wordListItem.numOfParticipants;
   const author = props.wordListItem.author;
@@ -19,18 +19,23 @@ const WordListItem = (props) => {
   return (
     <>
       <div className="wordListItemContainer">
-        <p className="itemName">{wordListName}</p>
+        <p className="itemName">{wordListTopic}</p>
         <div className="itemInfo">
-          <img src={FlashcardItemIcon} />{totalWords} từ | <img src={StudenIcon}/> {numOfParticipants}
+          <img src={FlashcardItemIcon} />
+          {totalWords} từ | <img src={StudenIcon} /> {numOfParticipants}
         </div>
         <div className="authorInfo">
-        <p>Tác giả:</p> 
-        <p>{author}</p>
+          <p>Tác giả:</p>
+          <p>{author}</p>
         </div>
-        {isLearning ? <div className="userLearningInfo">
-        <li>Cần ôn tập: {numOfWordsToReview}</li>
-        <li>Đã ghi nhớ: {numOfWordsLearned}</li>
-        </div> : <></>}
+        {isLearning ? (
+          <div className="userLearningInfo">
+            <li>Cần ôn tập: {numOfWordsToReview}</li>
+            <li>Đã ghi nhớ: {numOfWordsLearned}</li>
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
     </>
   );

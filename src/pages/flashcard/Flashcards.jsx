@@ -7,7 +7,7 @@ const FlashCard = () => {
   const itemDemo = [
     {
       id: 1,
-      wordListName: "Từ vựng chủ đề văn phòng",
+      wordListTopic: "Từ vựng chủ đề văn phòng",
       totalWords: 123,
       numOfParticipants: 9825,
       author: "ivwilina",
@@ -17,7 +17,7 @@ const FlashCard = () => {
     },
     {
       id: 2,
-      wordListName: "Từ vựng chủ đề văn phòng",
+      wordListTopic: "Từ vựng chủ đề văn phòng",
       totalWords: 123,
       numOfParticipants: 9825,
       author: "ivwilina",
@@ -25,7 +25,7 @@ const FlashCard = () => {
     },
     {
       id: 2,
-      wordListName: "Từ vựng chủ đề văn phòng",
+      wordListTopic: "Từ vựng chủ đề văn phòng",
       totalWords: 123,
       numOfParticipants: 9825,
       author: "ivwilina",
@@ -33,7 +33,7 @@ const FlashCard = () => {
     },
     {
       id: 2,
-      wordListName: "Từ vựng chủ đề văn phòng",
+      wordListTopic: "Từ vựng chủ đề văn phòng",
       totalWords: 123,
       numOfParticipants: 9825,
       author: "ivwilina",
@@ -41,7 +41,7 @@ const FlashCard = () => {
     },
     {
       id: 2,
-      wordListName: "Từ vựng chủ đề văn phòng",
+      wordListTopic: "Từ vựng chủ đề văn phòng",
       totalWords: 123,
       numOfParticipants: 9825,
       author: "ivwilina",
@@ -64,7 +64,6 @@ const FlashCard = () => {
       {/*wrapper*/}
       <div className="flashcardsContentWrapper">
         <div className="flashcardsContentContainer">
-
           {/*thống kê*/}
           <div className="flashcardsStatistic">
             <h2>Tiến độ luyện từ của bạn</h2>
@@ -84,10 +83,20 @@ const FlashCard = () => {
             </div>
           </div>
 
-          {/*danh sách từ đang học dở*/}
+          {/*danh sách list từ đang học dở*/}
           <div className="pendingWordListContainer">
             <h2>Bộ từ đang học</h2>
             <div className="pendingWordList">
+              {itemDemo.map((item) => (
+                <WordListItem wordListItem={item} />
+              ))}
+            </div>
+          </div>
+
+          {/*danh sách list từ đã tạo*/}
+          <div className="createdWordListContainer">
+            <h2>Bộ từ đã tạo</h2>
+            <div className="createdWordList">
               {itemDemo.map((item) => (
                 <WordListItem wordListItem={item} />
               ))}
