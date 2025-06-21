@@ -77,6 +77,8 @@ button:focus-visible {
   --default-element-color: #ffffff;
   --default-text-color: #000000;
   --grey-text-color: #728093;
+  --input-border-color: #9e9e9e;
+  --high-light-color: #01adff;
 }
 body {
   margin: 0
